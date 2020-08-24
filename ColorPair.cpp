@@ -11,9 +11,9 @@ using namespace TelCoColorCoder;
         return minorColor;
         }
     std::string ColorPair::ToString() {
-            std::string colorPairStr = MajorColorNames[majorColor];
+            std::string colorPairStr = MajorColorNames[MajorColor::majorColor];
             colorPairStr += " ";
-            colorPairStr += MinorColorNames[minorColor];
+            colorPairStr += MinorColorNames[MinorColor::minorColor];
             return colorPairStr;
         }
 
