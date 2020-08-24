@@ -13,12 +13,11 @@ void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expec
     assert(colorPair.getMinor() == expectedMinor);
 }
 
-void testPairToNumber(
-    TelCoColorCoder::MajorColor major,
-    TelCoColorCoder::MinorColor minor,
+void testPairToNumber(MajorColor major,
+    MinorColor minor,
     int expectedPairNumber)
 {
-    int pairNumber = TelCoColorCoder::GetPairNumberFromColor(major, minor);
+    int pairNumber = GetPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
