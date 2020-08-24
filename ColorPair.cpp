@@ -5,7 +5,7 @@ using namespace TelCoColorCoder;
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
         majorColor(major), minorColor(minor) {};
         MajorColor getMajor() {
-            return majorColor;
+            return MajorColor::majorColor;
         }
         MinorColor getMinor() {
             return minorColor;
