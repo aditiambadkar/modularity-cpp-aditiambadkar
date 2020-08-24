@@ -3,8 +3,8 @@
 
 namespace TelCoColorCoder
 {
-    enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-    enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+    enum class MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+    enum class MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
     const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
@@ -19,8 +19,8 @@ namespace TelCoColorCoder
 
     class ColorPair {
         private:
-            enum class MajorColor majorColor;
-            enum class MinorColor minorColor;
+            enum MajorColor majorColor;
+            enum MinorColor minorColor;
         public:
             ColorPair(MajorColor major, MinorColor minor);
             MajorColor getMajor();
