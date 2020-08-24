@@ -1,7 +1,7 @@
+#include<iostream>
 #include "ColorPair.h"
 
 using namespace TelCoColorCoder;
-using namespace std;
 
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
         majorColor(major), minorColor(minor) {};
