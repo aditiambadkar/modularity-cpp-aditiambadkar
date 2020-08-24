@@ -1,5 +1,6 @@
 #pragma once
-
+using namespace std;
+    
 namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
