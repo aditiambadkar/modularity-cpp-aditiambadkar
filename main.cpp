@@ -2,7 +2,7 @@
 #include <assert.h>
 //#include "ColorPair.h"
 
-using namespace TelCoColorCoder;
+//using namespace TelCoColorCoder;
 
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
