@@ -1,3 +1,5 @@
+#include "ColorPair.h"
+
 using namespace TelCoColorCoder;
 
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
