@@ -19,8 +19,8 @@ namespace TelCoColorCoder
 
     class ColorPair {
         private:
-            extern enum MajorColor majorColor;
-            extern enum MinorColor minorColor;
+            enum MajorColor majorColor;
+            enum MinorColor minorColor;
         public:
             ColorPair(MajorColor major, MinorColor minor);
             MajorColor getMajor();
