@@ -2,7 +2,7 @@
 
 namespace TelCoColorCoder
 {
-    ColorPair(MajorColor major, MinorColor minor):
+    ColorPair::ColorPair(MajorColor major, MinorColor minor):
         majorColor(major), minorColor(minor)
         {}
         MajorColor getMajor() {
