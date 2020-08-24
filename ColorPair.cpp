@@ -4,11 +4,11 @@ using namespace TelCoColorCoder;
 
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
         majorColor(major), minorColor(minor) {};
-        MajorColor getMajor() {
-            return MajorColor::majorColor;
+    MajorColor ColorPair::getMajor() {
+        return majorColor;
         }
-        MinorColor getMinor() {
-            return minorColor;
+    MinorColor ColorPair::getMinor() {
+        return minorColor;
         }
         std::string ToString() {
             std::string colorPairStr = MajorColorNames[majorColor];
