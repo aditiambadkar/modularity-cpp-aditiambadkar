@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include<string>
 #include "ColorPair.h"
 
 void testNumberToPair(int pairNumber, 
@@ -21,6 +22,16 @@ void testPairToNumber(
     int pairNumber = TelCoColorCoder::GetPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
+}
+
+std::string ToString()
+{
+    string codeToColorsMappings = "";
+    for(int pairNumber = 1; pairNumber <= 25; pairNumber++) {
+        TelCoColorCoder::ColorPair colorPair =
+        TelCoColorCoder::GetColorFromPairNumber(pairNumber);
+        codeToColorsMappings = codeToColorsMappings + pairNumber + " " + colorPair.ToString() + " ";
+    }
 }
 
 int main() {
