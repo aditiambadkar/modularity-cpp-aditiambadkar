@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include<string.h>
+#include<string>
 #include "ColorPair.h"
 
 void testNumberToPair(int pairNumber, 
@@ -26,7 +26,7 @@ void testPairToNumber(
 
 std::string ToString()
 {
-    string codeToColorsMappings = "";
+    std::string codeToColorsMappings = "";
     for(int pairNumber = 1; pairNumber <= 25; pairNumber++) {
         TelCoColorCoder::ColorPair colorPair =
         TelCoColorCoder::GetColorFromPairNumber(pairNumber);
