@@ -4,7 +4,7 @@
 
 using namespace TelCoColorCoder;
 
-numberOfMajorColors =
+int numberOfMajorColors =
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
 
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
