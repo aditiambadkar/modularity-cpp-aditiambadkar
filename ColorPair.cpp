@@ -12,7 +12,7 @@ using namespace TelCoColorCoder;
     MinorColor ColorPair::getMinor() {
         return minorColor;
         }
-MajorColorNames[] = {
+const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
     std::string ColorPair::ToString() {
