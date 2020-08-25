@@ -31,10 +31,11 @@ std::string ToString()
         TelCoColorCoder::ColorPair colorPair =
         TelCoColorCoder::GetColorFromPairNumber(pairNumber);
         codeToColorsMappings += pairNumber;
-        codeToColorsMappings += " " 
+        codeToColorsMappings += " "; 
         codeToColorsMappings += colorPair.ToString();
         codeToColorsMappings += " ";
     }
+    return codeToColorsMappings;
 }
 
 int main() {
