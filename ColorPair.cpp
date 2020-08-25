@@ -8,7 +8,7 @@ const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
 int numberOfMajorColors =
-        sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+        sizeof(TelCoColorCoder::MajorColorNames) / sizeof(TelCoColorCoder::MajorColorNames[0]);
 
 int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
