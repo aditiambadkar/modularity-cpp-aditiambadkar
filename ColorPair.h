@@ -8,7 +8,7 @@ namespace TelCoColorCoder
     /*const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };*/
-    int numberOfMajorColors;
+    extern int numberOfMajorColors;
     /*const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "Slate"
     };
