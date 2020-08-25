@@ -10,11 +10,11 @@ const char* MajorColorNames[] = {
 int numberOfMajorColors =
         sizeof(TelCoColorCoder::MajorColorNames) / sizeof(TelCoColorCoder::MajorColorNames[0]);
 
-int numberOfMinorColors =
-        sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "Slate"
     };
+int numberOfMinorColors =
+        sizeof(TelCoColorCoder::MinorColorNames) / sizeof(TelCoColorCoder::MinorColorNames[0]);
 
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
         majorColor(major), minorColor(minor) {};
@@ -33,11 +33,11 @@ const char* MinorColorNames[] = {
     ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
-            (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
+            (MajorColor)(zeroBasedPairNumber / TelCoColorCoder::numberOfMinorColors);
         MinorColor minorColor =
-            (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
+            (MinorColor)(zeroBasedPairNumber % TelCoColorCoder::numberOfMinorColors);
         return ColorPair(majorColor, minorColor);
     }
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
-        return major * numberOfMinorColors + minor + 1;
+        return major * TelCoColorCoder::numberOfMinorColors + minor + 1;
     }
