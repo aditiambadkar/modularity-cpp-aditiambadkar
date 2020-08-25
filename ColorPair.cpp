@@ -4,7 +4,6 @@
 
 using namespace TelCoColorCoder;
 
-    MajorColor = {WHITE, RED, BLACK, YELLOW, VIOLET};
     ColorPair::ColorPair(MajorColor major, MinorColor minor) : 
         majorColor(major), minorColor(minor) {};
     MajorColor ColorPair::getMajor() {
