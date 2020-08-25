@@ -1,5 +1,3 @@
-#ifndef COLORPAIR_H_
-#define COLORPAIR_H_
 #include<string>
 
 namespace TelCoColorCoder
@@ -32,5 +30,3 @@ namespace TelCoColorCoder
     ColorPair GetColorFromPairNumber(int pairNumber);
     int GetPairNumberFromColor(MajorColor major, MinorColor minor);
 }
-
-#endif
