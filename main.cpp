@@ -30,7 +30,10 @@ std::string ToString()
     for(int pairNumber = 1; pairNumber <= 25; pairNumber++) {
         TelCoColorCoder::ColorPair colorPair =
         TelCoColorCoder::GetColorFromPairNumber(pairNumber);
-        codeToColorsMappings = codeToColorsMappings + pairNumber + " " + colorPair.ToString() + " ";
+        codeToColorsMappings += pairNumber;
+        codeToColorsMappings += " " 
+        codeToColorsMappings += colorPair.ToString();
+        codeToColorsMappings += " ";
     }
 }
 
