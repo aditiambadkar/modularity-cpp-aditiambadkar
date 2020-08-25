@@ -4,7 +4,7 @@
 
 using namespace TelCoColorCoder;
 
-const char* TelCoColorCoder::MajorColorNames[] = {
+const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
     int numberOfMajorColors =
